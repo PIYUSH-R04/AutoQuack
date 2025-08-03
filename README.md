@@ -7,31 +7,11 @@
 
 <br/>
 
-<pre align="center"><code>                                                                                                                                                                        
-                                                                                                                                                                                   
-               AAA                                     tttt                                QQQQQQQQQ                                                            kkkkkkkk           
-              A:::A                                 ttt:::t                              QQ:::::::::QQ                                                          k::::::k           
-             A:::::A                                t:::::t                            QQ:::::::::::::QQ                                                        k::::::k           
-            A:::::::A                               t:::::t                           Q:::::::QQQ:::::::Q                                                       k::::::k           
-           A:::::::::A        uuuuuu    uuuuuuttttttt:::::ttttttt       ooooooooooo   Q::::::O   Q::::::Quuuuuu    uuuuuu    aaaaaaaaaaaaa      cccccccccccccccc k:::::k    kkkkkkk
-          A:::::A:::::A       u::::u    u::::ut:::::::::::::::::t     oo:::::::::::oo Q:::::O     Q:::::Qu::::u    u::::u    a::::::::::::a   cc:::::::::::::::c k:::::k   k:::::k 
-         A:::::A A:::::A      u::::u    u::::ut:::::::::::::::::t    o:::::::::::::::oQ:::::O     Q:::::Qu::::u    u::::u    aaaaaaaaa:::::a c:::::::::::::::::c k:::::k  k:::::k  
-        A:::::A   A:::::A     u::::u    u::::utttttt:::::::tttttt    o:::::ooooo:::::oQ:::::O     Q:::::Qu::::u    u::::u             a::::ac:::::::cccccc:::::c k:::::k k:::::k   
-       A:::::A     A:::::A    u::::u    u::::u      t:::::t          o::::o     o::::oQ:::::O     Q:::::Qu::::u    u::::u      aaaaaaa:::::ac::::::c     ccccccc k::::::k:::::k    
-      A:::::AAAAAAAAA:::::A   u::::u    u::::u      t:::::t          o::::o     o::::oQ:::::O     Q:::::Qu::::u    u::::u    aa::::::::::::ac:::::c              k:::::::::::k     
-     A:::::::::::::::::::::A  u::::u    u::::u      t:::::t          o::::o     o::::oQ:::::O  QQQQ:::::Qu::::u    u::::u   a::::aaaa::::::ac:::::c              k:::::::::::k     
-    A:::::AAAAAAAAAAAAA:::::A u:::::uuuu:::::u      t:::::t    tttttto::::o     o::::oQ::::::O Q::::::::Qu:::::uuuu:::::u  a::::a    a:::::ac::::::c     ccccccc k::::::k:::::k    
-   A:::::A             A:::::Au:::::::::::::::uu    t::::::tttt:::::to:::::ooooo:::::oQ:::::::QQ::::::::Qu:::::::::::::::uua::::a    a:::::ac:::::::cccccc:::::ck::::::k k:::::k   
-  A:::::A               A:::::Au:::::::::::::::u    tt::::::::::::::to:::::::::::::::o QQ::::::::::::::Q  u:::::::::::::::ua:::::aaaa::::::a c:::::::::::::::::ck::::::k  k:::::k  
- A:::::A                 A:::::Auu::::::::uu:::u      tt:::::::::::tt oo:::::::::::oo    QQ:::::::::::Q    uu::::::::uu:::u a::::::::::aa:::a cc:::::::::::::::ck::::::k   k:::::k 
-AAAAAAA                   AAAAAAA uuuuuuuu  uuuu        ttttttttttt     ooooooooooo        QQQQQQQQ::::QQ    uuuuuuuu  uuuu  aaaaaaaaaa  aaaa   cccccccccccccccckkkkkkkk    kkkkkkk
-                                                                                                   Q:::::Q                                                                         
-                                                                                                    QQQQQQ                                                                                                                                                                                                                                                
-</code></pre>
+<p align="center">
+  <img src="assets/autoquack-ascii.png" alt="AutoQuack Banner" width="600"/>
+</p>
 
 ---
-
-# AutoQuack
 
 **AutoQuack** is a desktop application that implements user-driven OS interaction recording, dynamic PowerShell payload generation, and Rubber Ducky script construction for crafting and exporting simulated attack scripts/payloads in both `.ps1` and `.ducky` formats.
 
