@@ -34,8 +34,12 @@ def build_ducky_script(actions, payloads=None, obfuscation_method=None, delay_se
 
         elif action["type"] == "keystroke_sequence":
             raw = action.get("sequence", "")
-            lines.append(f"STRING {sanitize_string(raw)}")
+            if raw.strip().lower() == ".f4":
+                lines.append("ALT F4")
+            else:
+                lines.append(f"STRING {sanitize_string(raw)}")
             lines.append("ENTER")
+
 
         elif action["type"] == "run_program":
             prog = sanitize_string(action.get("program", "cmd.exe"))
@@ -47,9 +51,13 @@ def build_ducky_script(actions, payloads=None, obfuscation_method=None, delay_se
             lines.append("ENTER")
         
         elif action["type"] == "hotkey":
-            keys = action.get("keys", [])
-            if "ALT" in keys and "F4" in keys:
+            hotkey = action.get("hotkey", "").upper()
+            if hotkey == "ALT F4":
                 lines.append("ALT F4")
+            elif hotkey == "WIN R":
+                lines.append("GUI r")
+            else:
+                lines.append(f"REM Unhandled hotkey: {hotkey}")
 
         else:
             lines.append(f"REM Unknown action: {action}")

@@ -13,6 +13,7 @@ from payloads.recon import get_payload as get_recon
 from payloads.cred_dump import get_payload as get_cred_dump
 from payloads.persistence import get_payload as get_persistence
 
+
 class ShadowSimMain(QWidget):
     def __init__(self):
         super().__init__()
@@ -43,6 +44,8 @@ class ShadowSimMain(QWidget):
         print("[DEBUG] Actions received:", actions)
         for act in actions:
             print(act)
+
+        # ✅ Apply cleaned actions (already postprocessed)
         self.editor.actions = actions
         self.editor.update_script_view()
 
@@ -103,9 +106,10 @@ class ShadowSimMain(QWidget):
             "AutoQuack - Automated Payload Generator\n\n"
             "Developed by: Piyush R.\n"
             "License: MIT\n\n"
-            "This tool automatespayload generation and execution scripts.\n"
+            "This tool automates payload generation and execution scripts.\n"
             "Use responsibly for educational or authorized testing only."
         )
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

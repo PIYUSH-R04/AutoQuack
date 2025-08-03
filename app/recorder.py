@@ -62,13 +62,10 @@ class ActionRecorder(QObject):
             self.active_modifiers.add(key)
             return
 
+        # Detect WIN+R
         if hasattr(key, "char") and key.char == "r" and Key.cmd in self.active_modifiers:
-            self.keystroke_buffer.clear()
-            return
-
-        if Key.alt in self.active_modifiers and key == Key.f4:
             self._flush_keystrokes()
-            self._add_action("hotkey", hotkey="ALT F4")
+            self._add_action("hotkey", hotkey="WIN R")
             return
 
         if key == Key.enter:
@@ -113,8 +110,8 @@ class ActionRecorder(QObject):
 
         cleaned = (
             raw_seq.replace("Key.space", " ")
-                .replace("`", "")
-                .replace("'", "")
+                   .replace("`", "")
+                   .replace("'", "")
         )
         cleaned = re.sub(r"Key\.[a-zA-Z0-9_]+", "", cleaned)
         cleaned = re.sub(r"[_-][rl]", "", cleaned)
@@ -123,7 +120,7 @@ class ActionRecorder(QObject):
 
         if not cleaned:
             return
-        
+
         if re.match(r"^[a-z]{0,2}powershell(\.exe)?$", seq_lower):
             if self.shell_context == "powershell" and now - self.last_program_run.get("timestamp", 0) < 3:
                 return
@@ -148,14 +145,6 @@ class ActionRecorder(QObject):
 
         self._add_action("keystroke_sequence", sequence=cleaned, timestamp=now)
 
-
-
-    def _recent_shell_launched(self, shell_name, now, window=5):
-        for act in reversed(self.actions):
-            if act["type"] == "run_program" and shell_name in act["program"].lower():
-                return now - act["timestamp"] < window
-        return False
-
     def _is_cli_command(self, cmd):
         return (
             cmd.startswith("echo")
@@ -169,6 +158,7 @@ class ActionRecorder(QObject):
         action = {"type": type_, "timestamp": time.time()}
         action.update(kwargs)
         self.actions.append(action)
+        print(f"[ACTION RECORDED] {type_} => {kwargs}")  # Debug
 
     def _postprocess_actions(self, actions):
         cleaned = []
