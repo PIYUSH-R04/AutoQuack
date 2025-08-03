@@ -2,14 +2,15 @@
   <img src="assets/logo-autoquack-light.png" alt="AutoQuack Logo" width="200"/>
 </p> -->
 
-<h1 align="center">AutoQuack</h1>
-<p align="center"><i>Automated Payload Generator & Rubber Ducky Script Builder</i></p>
 
-<br/>
 
 <p align="center">
   <img src="assets/autoquack-ascii.png" alt="AutoQuack Banner" width="600"/>
 </p>
+<br/>
+<p align="center"><i>Automated Payload Generator & Rubber Ducky Script Builder</i></p>
+
+
 
 ---
 
