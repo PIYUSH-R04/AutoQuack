@@ -145,6 +145,10 @@ class ShadowSimMain(QWidget):
         self.setWindowTitle("AutoQuack — Automated Payload Generator")
         self.setMinimumSize(1200, 700)
 
+        from PySide6.QtGui import QIcon
+        self.setWindowIcon(QIcon("assets/logo-autoquack-light.ico"))
+
+
         self.sidebar = Sidebar()
         self.editor = PreviewEditor([], {}, "None", 0)
 

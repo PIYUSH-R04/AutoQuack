@@ -1,3 +1,42 @@
-/venv/
-/__pycache__/
+imp.txt
+
+# ✅ Python general
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.sqlite
+*.db
+*.egg-info/
+
+# ✅ Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.VENV/
+
+# ✅ PyInstaller build artifacts
+dist/
+build/
+*.spec
+
+# ✅ OS / Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.bak
+
+# ✅ Compiled executables (optional if you commit releases separately)
+*.exe
+*.dll
+
+# ✅ Local test artifacts
+*.log
+output/
+logs/
+cache/
