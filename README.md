@@ -1,6 +1,14 @@
-# AutoQuack
+<!-- <p align="center">
+  <img src="assets/logo-autoquack-light.png" alt="AutoQuack Logo" width="200"/>
+</p> -->
 
-```
+<h1 align="center">AutoQuack</h1>
+<p align="center"><i>Automated Payload Generator & Rubber Ducky Script Builder</i></p>
+
+<br/>
+
+<pre align="center"><code>
+
  ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░  ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░  ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
@@ -10,7 +18,11 @@
 ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░   ░▒▓█▓▒░   ░▒▓██████▓▒░ ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
                                                       ░▒▓█▓▒░                                                         
                                                        ░▒▓██▓▒░                                                       
-```
+</code></pre>
+
+---
+
+# AutoQuack
 
 **AutoQuack** is a desktop application that implements user-driven OS interaction recording, dynamic PowerShell payload generation, and Rubber Ducky script construction for crafting and exporting simulated attack scripts/payloads in both `.ps1` and `.ducky` formats.
 
