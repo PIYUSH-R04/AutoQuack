@@ -118,8 +118,8 @@ Click **"Save Script"** to export both formats.
 
 ## 📸 Screenshot
 
-![screenshot](screenshots/main_gui.png)
-
+![screenshot1](assets/view-ps1.png)
+![screenshot2](assets/view-ducky.png)
 ---
 
 ## 📄 License
