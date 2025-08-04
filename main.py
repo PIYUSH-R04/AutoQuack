@@ -43,7 +43,6 @@ AAAAAAA                   AAAAAAA uuuuuuuu  uuuu        ttttttttttt     oooooooo
      License: MIT                                     
 """
 
-print(BANNER)
 class ShadowSimMain(QWidget):
     def __init__(self):
         super().__init__()
@@ -143,10 +142,11 @@ class ShadowSimMain(QWidget):
             "This tool automates payload generation and execution scripts.\n"
             "Use responsibly for educational or authorized testing only."
         )
-
-
+        
 if __name__ == "__main__":
     from PySide6.QtCore import Qt
+    print(BANNER)
+
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("assets/logo-autoquack-light.png"))
 
